@@ -1,0 +1,80 @@
+#main {
+    min-height: 30rem;
+    margin-bottom: 5rem;
+}
+
+.post__item {
+    font-size: 14px;
+    transition: all 0.3s;    
+}
+.post__item:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.post_header {
+    position: relative;
+}
+.post_header img{
+    height: 200px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.post_date{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: #f5f6fb;
+    opacity: 0.9;
+}
+
+.post_body{
+    box-sizing: border-box;
+    background-color: #f5f6fb;
+    padding: 24px 25px 40px 25px;
+    line-height: normal;
+    height: 180px;
+}
+
+.content_right a{
+    text-decoration: none;
+    font-size:18px;
+    color: black;
+    font-weight: 600;
+    
+}
+.summary_item_blog{
+    font-size: 15px;
+    color: #707070;
+}
+
+/**/
+.sidebar li .submenu{ 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	padding-left: 1rem; 
+	padding-right: 1rem;
+}
+.sidebar .nav-link {
+    font-weight: 500;
+    color: var(--bs-dark);
+}
+.sidebar .nav-link:hover {
+    color: var(--bs-primary);
+}
+.footer {
+    background-color: #6EA7FB;
+}
+.input-edit {
+    width: 100%;
+    border: none;
+    opacity: 0.7;
+}
+.input-edit:focus {
+    outline: none;
+    font-style: bold;
+    opacity: 1;
+}
