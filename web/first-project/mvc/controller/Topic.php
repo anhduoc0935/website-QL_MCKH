@@ -18,9 +18,16 @@ class Topic extends Controller {
 
     public function render($action, $params) {
         if(!$action) {
+           $topics = [];
+            if($_SESSION['user_role'] === "teacher")
+                $topics = $this->topic_model
+                ->where('subject_id', '=', $_SESSION['subject_id'])
+                ->get();
+            else 
+                $topics = $this->topic_model->get();
             $this->loadLayout("Topic", [
                 'title' => 'Tất cả đề tài nghiên cứu',
-                'topics' => $this->topic_model->get(),
+                'topics' => $topics,
                 'subjects' => $this->subject_model->get(),
                 'route' => 'index'
             ]);
